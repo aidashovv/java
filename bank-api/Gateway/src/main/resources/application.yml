@@ -1,0 +1,35 @@
+server:
+  port: 9090
+
+logging:
+  level:
+    org:
+      springdoc: TRACE
+    springframework:
+      web: DEBUG
+      security: DEBUG
+    springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 3003
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+    init:
+      platform: postgresql
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: aeac851f7c391cf8a6fcdcc89243563602e96d30b2d6a51d9d07b372e3938f06
+  expiration: 1800000
+
+bank-api:
+  controllers:
+    user-url: http://localhost:8080/api/users
+    bank-account-url: http://localhost:8080/api/accounts

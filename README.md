@@ -1,4 +1,4 @@
-# My docs:
+# my docs:
 + [Hibernate](hibernate.md)
 + [Многопоточность](multithreading.md)
 + [Spring Core](springcore.md)
@@ -6,5 +6,5 @@
 + [Java Collections Framework](JCF.md)
 + [Сборщик мусора](garbage-collection.md)
 
-# My project
-Проект можно увидеть в каталоге `bank-api`.
+# my project
+Лежит в `bank-api`.
